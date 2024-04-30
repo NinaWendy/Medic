@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Honeycomb-Mobile</string>
+    <string name="medicare">MediCare</string>
+    <string name="background_image">background_image</string>
+    <string name="arrowicon">ArrowIcon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1039178278344",
+    "project_id": "medicare-9c875",
+    "storage_bucket": "medicare-9c875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039178278344:android:fc39602ef6d74947aaccfd",
+        "android_client_info": {
+          "package_name": "com.dev.honeycomb_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDDrd0oT_A2L4fJJMzNX7VywILOevPnBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
