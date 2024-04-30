@@ -1,15 +1,6 @@
-# VCF Hackathon
 # MediCare
 
 #### A medical app that allows you to book a doctor's appointment and order medicine online.
-#### CONTRIBUTORS
-<ul>
-<li>Wendy Busolo</li> 
-<li>Rachel Namiba</li>
-<li>Gamaliel Sirengo</li>
-<li>Lynn Nyangon</li>
-<li>Cynthia Munyasya</li>
-</ul>
 
 
 ## Description
