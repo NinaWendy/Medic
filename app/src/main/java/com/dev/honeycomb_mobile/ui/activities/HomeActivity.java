@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.dev.honeycomb_mobile.R;
+import com.dev.honeycomb_mobile.models.Constants;
 import com.dev.honeycomb_mobile.models.Doctor;
 import com.dev.honeycomb_mobile.models.DoctorDto;
 import com.dev.honeycomb_mobile.network.clients.DoctorClient;
@@ -90,11 +91,12 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewInter
         call.enqueue(new Callback<List<Doctor>>() {
             @Override
             public void onResponse(Call<List<Doctor>>  call, Response<List<Doctor>> response) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                    doctorList= response.body().stream().collect(Collectors.toList());
-                }
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+//                    doctorList= response.body().stream().collect(Collectors.toList());
+//                }
+                doctorList = Constants.dummyDoctors;
                 init(doctorList);
-                Log.d("Doctors", " " + doctorList.size());
+                Log.d("Doctors", " " + doctorList);
             }
 
             @Override
@@ -112,13 +114,14 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewInter
         recyclerView.setLayoutManager(layoutManager);
     }
     public void init(List<Doctor> doctorList){
-        doctorsRecyclerAdapter = new DoctorsRecyclerAdapter(this, HomeActivity.this, doctorList);
+        doctorsRecyclerAdapter = new DoctorsRecyclerAdapter(this, HomeActivity.this, Constants.dummyDoctors);
         recyclerView.setAdapter(doctorsRecyclerAdapter);
     }
 
     @Override
     public void onItemClick(int position) {
         Intent intent = new Intent(this, DoctorDetailActivity.class);
+        Log.v("wiiiiiiiiiiiiiiiiiiii",String.valueOf(doctorList));
         intent.putExtra("details",doctorList.get(position));
         startActivity(intent);
     }

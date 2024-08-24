@@ -23,6 +23,20 @@ public class Doctor implements Serializable {
 
     private Double experience;
 
+    public Doctor(String firstName, String lastName, String image, Double phone, Double rating,
+                  String about, String specialization, Double id, String hospital, Double experience) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.image = image;
+        this.phone = phone;
+        this.rating = rating;
+        this.about = about;
+        this.specialization = specialization;
+        this.id = id;
+        this.hospital = hospital;
+        this.experience = experience;
+    }
+
     public String getFirstName() {
         return this.firstName;
     }

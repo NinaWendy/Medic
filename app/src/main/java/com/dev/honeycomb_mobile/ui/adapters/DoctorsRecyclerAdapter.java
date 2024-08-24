@@ -1,6 +1,7 @@
 package com.dev.honeycomb_mobile.ui.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,6 +70,7 @@ public class DoctorsRecyclerAdapter extends RecyclerView.Adapter<DoctorsRecycler
                     if (recyclerViewInterface != null){
                         int pos = getAdapterPosition();
                         if (pos != RecyclerView.NO_POSITION){
+                            Log.v("hapaaaaaaaaaaaaaa",String.valueOf(pos));
                             recyclerViewInterface.onItemClick(pos);
                         }
                     }
